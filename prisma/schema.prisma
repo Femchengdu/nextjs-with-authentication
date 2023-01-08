@@ -26,6 +26,7 @@ model Song {
   artist    Artist     @relation(fields: [artistId], references: [id])
   artistId  Int
   duration  Int
+  name      String
   url       String
   playlists Playlist[]
 }
